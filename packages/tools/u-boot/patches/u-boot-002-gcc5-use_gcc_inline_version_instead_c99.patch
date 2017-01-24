@@ -1,0 +1,15 @@
+--- a/include/linux/compiler-gcc.h.orig	2017-01-23 03:40:32.232948157 +0300
++++ a/include/linux/compiler-gcc.h	2017-01-23 04:18:26.980351031 +0300
+@@ -70,9 +70,9 @@
+  */
+ #if !defined(CONFIG_ARCH_SUPPORTS_OPTIMIZED_INLINING) ||		\
+     !defined(CONFIG_OPTIMIZE_INLINING) || (__GNUC__ < 4)
+-#define inline		inline		__attribute__((always_inline)) notrace
+-#define __inline__	__inline__	__attribute__((always_inline)) notrace
+-#define __inline	__inline	__attribute__((always_inline)) notrace
++#define inline		inline		__attribute__((always_inline)) __attribute__((__gnu_inline__)) notrace
++#define __inline__	__inline__	__attribute__((always_inline)) __attribute__((__gnu_inline__)) notrace
++#define __inline	__inline	__attribute__((always_inline)) __attribute__((__gnu_inline__)) notrace
+ #else
+ /* A lot of inline functions can cause havoc with function tracing */
+ #define inline		inline		notrace
