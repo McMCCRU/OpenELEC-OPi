@@ -1,5 +1,4 @@
-[OpenELEC-OPi]
-See http://www.orangepi.org/orangepibbsen/forum.php?mod=viewthread&tid=1077
+See [Orange PI forum](http://www.orangepi.org/orangepibbsen/forum.php?mod=viewthread&tid=1077) for details.
 
 [OpenELEC](http://www.openelec.tv)
 
