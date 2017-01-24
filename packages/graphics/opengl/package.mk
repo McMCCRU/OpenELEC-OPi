@@ -37,7 +37,7 @@ case $OPENGL in
     PKG_ARCH="arm"
     PKG_LICENSE="nonfree"
     PKG_SITE="https://github.com/WhiteWind/sunxi-mali-proprietary"
-    PKG_URL="https://github.com/McMCCRU/sources/blob/master/$PKG_NAME-$PKG_VERSION.tar.xz"
+    PKG_URL="https://github.com/McMCCRU/sources/raw/master/$PKG_NAME-$PKG_VERSION.tar.xz"
     PKG_DEPENDS_TARGET="toolchain"
     PKG_PRIORITY="optional"
     PKG_SECTION="graphics"
